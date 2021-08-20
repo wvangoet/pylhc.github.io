@@ -115,16 +115,17 @@ nav:
       - About omc3: packages/omc3/about.md
       - Getting Started: packages/omc3/getting_started.md
       - Analysis: packages/omc3/analysis.md
+      - Corrections: packages/omc3/correction.md
       - Know-How: packages/omc3/know_how.md
       - ↪ On Github: https://github.com/pylhc/omc3
-    - PyLHC: 
+    - PyLHC:
       - About: packages/pylhc/about.md
       - Forced DA Analysis: packages/pylhc/forced_da.md
       - Machine Settings Info: packages/pylhc/machine_settings_info.md
       - BSRT Logger/Analysis: packages/pylhc/bsrt.md
       - BPM Calibration: packages/pylhc/bpm_calibration.md
       - ↪ On Github: https://github.com/pylhc/PyLHC
-    - PyLHC-Submitter: 
+    - PyLHC-Submitter:
       - About: packages/pylhcsubmitter/about.md
       - Job Submitter: packages/pylhcsubmitter/job_submitter.md
       - AutoSix: packages/pylhcsubmitter/autosix.md
@@ -138,7 +139,7 @@ nav:
       - ↪ tfs-pandas: https://github.com/pylhc/tfs
       - ↪ sdds: https://github.com/pylhc/sdds
       - ↪ generic-parser: https://github.com/pylhc/generic_parser
-    - Python Development: 
+    - Python Development:
       - Contributing: packages/development/contributing.md
       - Virtual Environments: packages/development/howto_venv.md
       - Releases: packages/development/howto_release.md
@@ -178,4 +179,3 @@ nav:
         - Editing Wiki: resources/howto/wiki.md
       - Publications: resources/publications.md
       - FAQ: resources/faqs.md
-
