@@ -4,7 +4,7 @@ This page contains a walk-through of how to perform a global correction us. To f
 Before performing the global correction one must perform frequency and optics analysis in order to get the .tfs files for the quantities you want to correct. The analysis is done according to this workflow (TODO: cite workflow). If one wants to perform a correction based on a twiss file, this script (TODO: refrence fake_measurement_file) can be used to convert the twiss into the correct format for the global correction.
 
 The response creator and global correction code, both take a model directory as a input. the model is generated with the follwing code
-```python
+```bash
 python -m omc3.model_creator \
     --accel lhc \
     --type nominal \
@@ -14,8 +14,21 @@ python -m omc3.model_creator \
     --ats True \ (True or true in command line??)
     --nat_tunes 62.31 60.32 \
     --drv_tunes 62.30 60.332 \
+    --driven_excitation acd \
+    --dpp 0. \
     --modifiers modifiers \
     --outputdir lhc_model
 ```
 Where the modifiers, tunes, beam, etc must correspond to the state of the machine when the measurement was performed
-Go and write now :)
+```bash
+python -m omc3.create_response_entrypoint \
+        --model_dir lhc_model \
+        --accel lhc \
+        --year 2018 \
+        --energy 6.5 \
+        --beam = 1 \
+        --ats True \
+        --delta_k 0.00002 \
+        --variable_categories F1001R F1001I \
+        --outfile_path responsematrix \   
+```
