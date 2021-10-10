@@ -1,8 +1,11 @@
 # The beam selection Window
 
-!!! todo
-    Include screenshot of Beam-Selection Window and describe the settings.
+<figure>
+  <img src="../../../assets/images/betabeat_gui/startup_window.png" width="90%" />
+  <figcaption>The startup panel to chose beam.</figcaption>
+</figure>
 
+!!! The important thing here is to chose the correct beam for the machine. Ones this is done you will have to restart the application to change beam/machine. 
 
 !!! tip "Setting Your Defaults"
     The GUI defaults to specific locations for which `Beta-Beat.src` directory to use, the input path of you data, etc.
