@@ -13,8 +13,12 @@ The content of the loaded files will be displayed in two charts:
 - One for the horizontal BPMs,
 - One for the vertical BPMs.
 
-!!! todo
-    Include a screenshot with two BPM panels.
+The imporant thing here is to check that the amplitude of the oscillation and the data in general make sense. 
+<figure>
+  <img src="../../../assets/images/betabeat_gui/turn_by_turn.png" width="90%" />
+  <figcaption>Turn-by-turn data display.</figcaption>
+</figure>
+    
 
 The charts are interactive and can be used to zoom in/out, or focus on a given rectangle of the shown data.
 

@@ -12,8 +12,10 @@ There are in total three main tabs for the optics panel:
 By default, the user is taken to the `Optics` tab.
 A wide variety of computed physical properties can be visualized across the entire machine.
 
-!!! todo
-    Include a screenshot with the main optics tab.
+<figure>
+  <img src="../../../assets/images/betabeat_gui/corrections.png" width="90%" />
+  <figcaption>The optics panel.</figcaption>
+</figure>
 
 ## Segment-by-Segment: Segment Tab
 
@@ -44,7 +46,8 @@ The working is similar to the one for different [segments](#Segment-by-Segment: 
 
 ## Computing Corrections
 
-The `Correction` button at the bottom left of the optics panel can be used to calculate the optics corrections for the beam process.
+The `Correction` button at the bottom left of the optics panel can be used to calculate the optics corrections.
+
 
 The settings dialogue offers a wide range of different options for corrections.
 This will call different external python scripts again.
@@ -57,8 +60,16 @@ The following methods implement different correction algorithms:
 - `Iterative correction`: Two-beams version of the global correction.
 - `Chromatic coupling`: Single beam correction of chromatic coupling using skew sextupoles at dispersive locations.
 
-??? note
-    The `Iterative correction` method is currently not compatible and thus disabled.
+One of the most important thing for the correction is to remove outliers. 
+This can easily be done with setting the cuts in such a way that too large deviations or errors are not included in the correctrion. 
+
+<figure>
+  <img src="../../../assets/images/betabeat_gui/corrections_only_panel.png" width="90%" />
+  <figcaption>The correction panel.</figcaption>
+</figure>
+
+
+In the case of the LHC we try to keep the strength below 1e-3 and preferably to a 5e<-4 so if the corrections are stronger than that they should be cross checked. 
 
 The results are outputted in the `changeparameters` files.
 These files store the magnet names and corresponding correction strengths.

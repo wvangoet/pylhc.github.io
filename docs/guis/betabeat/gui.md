@@ -6,6 +6,7 @@ This section provides a short overview for the main features.
 
 The GUI provides several panels, each for a defined use and with a set of options and results:
 
+- [The Model Creation](bpm_panel.md) for loading measurements files, displaying data and launching analysis.
 - [The BPM Panel](bpm_panel.md) for loading measurements files, displaying data and launching analysis.
 - [The Analysis Panel](analysis_panel.md) to display and manipulate the results of harmonic analysis on measurement data.
 - [The Optics Panel](optics_panel.md) to compare computed optics to nominal models.
